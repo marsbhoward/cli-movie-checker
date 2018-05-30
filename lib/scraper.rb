@@ -25,7 +25,6 @@ class Scraper
   end
 
   def make_movies
-
     self.get_netflix_movies.each do |post|
       movie = Movie.new
       movie.title = post.first[1]
@@ -38,19 +37,6 @@ class Scraper
       movie.title = post.first[1]
       movie.stream = "Hulu"
       Stream.new (movie.stream)
-    end
-  end
-    self.make_movies
-
-    streams = []
-    Movie.all.each do |movie|
-      if movie.title
-
-        streams << movie.stream unless streams.include?(movie.stream)
-      end
-    end
-    puts
-    puts streams
-    puts
-  end
-end
+	end
+   end
+ end

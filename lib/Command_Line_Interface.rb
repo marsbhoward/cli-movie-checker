@@ -86,11 +86,11 @@ class CommandLineInterface
 				when "list movies"
 					print_movies
 				when "netflix"
-					Scraper.new.print_netflix
+					print_netflix
 				when "hulu"
-					Scraper.new.print_hulu
+					print_hulu
 				when "list streams"
-					Scraper.new.print_streams
+					print_streams
 			end
 		end
 	end
