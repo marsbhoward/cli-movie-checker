@@ -40,57 +40,6 @@ class Scraper
       Stream.new (movie.stream)
     end
   end
-
-  def print_movies
-    self.make_movies
-    i = 1
-    Movie.all.each do |movie|
-      puts "Movie #{i}"
-      if movie.title
-
-        puts "  Title: #{movie.title}"
-        puts "  stream: #{movie.stream}"
-        i = i + 1
-      end
-    end
-    Movie.all.clear
-  end
-
-
-  def print_netflix
-    self.make_movies
-    i = 1
-    Movie.all.each do |movie|
-
-
-      if movie.stream == "Netflix"
-        puts "Movie #{i}"
-        puts "  Title: #{movie.title}"
-        puts "  stream: #{movie.stream}"
-        i = i + 1
-      end
-    end
-    Movie.all.clear
-  end
-
-  def print_hulu
-    self.make_movies
-    i = 1
-    Movie.all.each do |movie|
-
-
-      if movie.stream == "Hulu"
-        puts "Movie #{i}"
-
-        puts "  Title: #{movie.title}"
-        puts "  stream: #{movie.stream}"
-        i = i + 1
-      end
-    end
-    Movie.all.clear
-  end
-
-  def print_streams
     self.make_movies
 
     streams = []
