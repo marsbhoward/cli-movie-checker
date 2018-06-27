@@ -1,7 +1,7 @@
 class Movie
   require_relative './stream.rb'
   attr_accessor :title
-  attr_accessor :stream, :genre
+  attr_accessor :stream 
 
   @@all = []
 
@@ -12,7 +12,7 @@ class Movie
   def self.all
     @@all
   end
-
+  
   def self.reset_all
     @@all.clear
   end
