@@ -1,7 +1,7 @@
 # Mars movie_checker.gemspec
 Gem::Specification.new do |s|
   s.name        = 'moviechecker'
-  s.version     = '0.1.1'
+  s.version     = '0.1.2'
   s.date        = '2010-04-28'
   s.summary     = "trending movies availible for streaming"
   s.description = "Uses Nokogiri to display the trending movies from streaming sites"
