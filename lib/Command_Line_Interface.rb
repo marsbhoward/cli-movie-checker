@@ -100,11 +100,7 @@ class CommandLineInterface
 
 			def print_movies
 				i = 1
-				puts "**********"
-				puts ""
-				puts "This was done i = 1"
-				puts ""
-				puts "**********"
+				
 				Movie.all.each do |movie|
 				  puts "Movie #{i}"
 				  if movie.title
